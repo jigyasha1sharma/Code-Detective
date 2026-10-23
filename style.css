@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f8;
+    font-family: Arial, sans-serif;
+    color: #292936;
+}
+
+.container {
+    max-width: 650px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+h1 {
+    color: #6c4caf;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.score {
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.quiz-box {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#question-number {
+    color: #777;
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 21px;
+    line-height: 1.5;
+}
+
+pre {
+    background-color: #272735;
+    color: #f1f1f1;
+    padding: 18px;
+    border-radius: 6px;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.option {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.option:hover:not(:disabled) {
+    background-color: #f0eafa;
+    border-color: #6c4caf;
+}
+
+.option:disabled {
+    cursor: default;
+    color: #292936;
+}
+
+.correct {
+    background-color: #d9f5df;
+    border-color: #33964a;
+}
+
+.wrong {
+    background-color: #ffe0e0;
+    border-color: #d64545;
+}
+
+#message {
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+button {
+    padding: 12px 18px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #6c4caf;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover:not(:disabled) {
+    background-color: #573b91;
+}
+
+button:disabled {
+    background-color: #b9b2c8;
+    cursor: not-allowed;
+}
+
+#restart-btn {
+    background-color: #444;
+    margin-top: 20px;
+}
+
+#restart-btn:hover {
+    background-color: #222;
+}
+
+@media (max-width: 500px) {
+    .container {
+        margin-top: 15px;
+    }
+
+    .quiz-box {
+        padding: 16px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
